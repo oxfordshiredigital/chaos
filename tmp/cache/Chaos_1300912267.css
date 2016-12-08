@@ -1,0 +1,718 @@
+/*
+* CSS main style - Chaos Jewellery
+* @author Simone Folador - simone@alberon.co.uk - 2010
+*/
+
+html {
+  font-size: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: Helvetica, Arial;
+  height: 100%;  
+}
+
+img{
+border: 0px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*
+* MAIN STRUCTURE
+*/
+
+#global-container{
+	position: absolute;
+	width: 950px;
+	height: 100%;
+	margin-left: -475px;
+	left: 50%;
+}
+
+.wrapper{
+
+margin: 0 auto -200px;
+	position: relative;
+	top: 37px;
+zoom: 1;
+}
+
+#top-menu-container {
+	position: absolute;
+	top: 0px;
+	width: 950px;
+	border-bottom: 1px solid pink;
+	height:  26px; 
+}
+
+/* white space to separate menu items in the top menu*/
+.menu-space{
+	float: left;
+	width: 61px;
+	height: 26px;
+}
+
+#top-menu-container ul{
+	list-style-type: none;
+	white-space: nowrap;
+}
+
+#top-menu-container li {
+	display: inline;
+	line-height: 26px;
+	color: #918f8f;
+	font-size: 12px;
+}
+
+#top-menu-container li.menu-item-container a,
+#top-menu-container li.menu-item-container a:visited
+{
+	color: #918f8f;
+
+}
+
+#top-menu-container li.menu-item-container a:hover,
+#top-menu-container ul .menuactive a, 
+#top-menu-container ul .menuactive a:visited{
+	color:#dc3682;
+}
+
+/* container of each menu item (an li tag)*/
+.menu-item-container{
+	height: 26px;
+	float: left;
+}
+
+
+/* this element is used to space the first menu item on the left (in the top menu)*/
+#angle-spacer-left{
+	float: left;
+	width: 37px;
+	height: 26px;
+}
+/* this element is used to space the last menu item on the right (in the top menu)*/
+#angle-spacer-right{
+	position: absolute;
+	right: 0px;
+	width: 37px;
+	height: 26px;
+}
+
+/* home page claim box*/
+#claim-container{
+	position: relative;
+	height: 210px;
+	width: 616px;
+}
+
+/* home page three boxes container*/
+#boxes-container-home{
+	float: right;
+	height: 270px;
+	width: 580px;
+	/*margin-top: 14px;*/
+	right: 0px;
+}
+
+/* left column container - home page (container claim box and three images box)*/
+#left-container-home{
+	position: absolute;
+	top: 28px;
+	width:616px;
+}
+
+/* contains the left content - all the pages (except home page)*/
+#left-container-pages{
+float:left;
+	padding-left: 37px;
+	padding-top: 20px;
+	/*top: 57px;*/
+	width: 214px;
+zoom: 1;
+
+}
+
+
+
+/* contains the right column - all pages*/
+#right-column{
+	zoom: 1;
+
+	float: right;
+	margin-top: 13px;
+	/*top: 50px;
+	right: 0px;*/
+	width: 310px;
+}
+
+#right-column-home{
+/*position: absolute;*/
+	float: right;
+	margin-top: 50px;
+	/*top: 50px;
+	right: 0px;*/
+	width: 310px;
+}
+
+.right-column-content{
+/*	margin-top: 24px;
+	margin-left: 5px;
+	margin-right: 37px;*/
+	margin-top: 27px;
+	margin-left: 5px;
+	margin-right: 37px;
+}
+
+.right-column-content .text{
+	font-size: 12px;
+	color: #808285;
+}
+
+.right-column-content ul li{
+list-style-type:disc;
+margin:10px;
+}
+
+/* footer box home page*/
+#footer-home{
+	width: 580px;
+	height: 38px;
+	position: absolute;
+	top: 522px;
+	left: 37px;
+}
+
+
+
+/* contains certified and facebook images - home page*/
+#footer-home .img-container{
+height: 38px;
+float: left;
+line-height: 38px;
+}
+
+/* contains text information in the footer - home page*/
+.info-footer-home{
+	float: right;
+	width: 210px;
+	height: 38px;
+}
+
+.info-footer-page{
+	width: 214px;
+}
+
+/* logo box home page*/
+#logo-container-home{
+	position: relative;
+	margin-top: 10px;
+	width: 274px;
+	height: 136px;
+	display: block;
+}
+
+/* right image home page*/
+#presentation-image {
+	position: relative;
+	left: 5px;
+	width: 274px;
+	height: 352px;
+	display: block;
+}
+
+/* logo box - all pages*/
+.logo-container-left{
+	height: 86px;
+	width: 214px;
+}
+
+/* page content container - all pages except home page */
+.page-content{
+	width: 350px;
+	/*top: 80px;*/
+	margin-top: 43px;
+	/*position: absolute;*/
+	float: left;
+	padding-left: 15px;
+
+}
+
+
+
+
+/* container used in the Inner_Page_Extended template*/
+.page-content-extended{
+	width: 635px;
+	/*top: 80px;*/
+	margin-top:43px;
+	/*position: absolute;*/
+	float:left;
+padding-left:20px;
+	/*left: 274px;*/
+}
+/* footer box - all pages except home page*/
+.footer-left{
+	position: absolute;
+	bottom: 50px;
+	height: 128px;
+	width: 214px;
+margin-left:37px;
+zoom: 1;
+
+}
+
+.clear{clear:both;}
+
+/* dummy box to push the footer down*/
+.footer-spacer-left{
+	height:200px;
+position:relative;
+clear:both;
+}
+
+/* menu container - all pages except home page*/
+.left-menu-container{
+	width: 214px;
+float: left;	
+	margin-top: 30px;
+
+}
+
+/* box container (for each of the three images and text) - home page */
+.box-container{
+	float: right;
+	width: 184px;
+	height: 270px;
+	margin-left: 14px;
+}
+
+/* "square" image container - home page*/
+.square-home{
+	float: left;
+	width: 184px;
+	height: 166px;
+}
+
+/* box for the image description (each one of the three images) - home page*/
+.box-description-container{
+	height: 94px;
+	float: left;
+	width: 180px;
+	margin-top: 10px;
+}
+
+/* used for the first element on the three images - home page*/
+.on-the-left,
+.info-footer-element-home  .on-the-left
+{
+	margin-left: 0px;
+}
+
+/* just copies the main ul characteristics*/
+.left-menu-container ul{
+	list-style-type: none;
+	white-space: nowrap;
+
+}
+
+/* uses the same class (menu-item-container) but overrides properties to use it on the left menu*/
+.left-menu-container li.menu-item-container {
+	width: 100%;
+	color: #918f8f;
+	font-size: 12px;
+}
+
+.left-menu-container ul li a:visited,
+.left-menu-container ul li a{
+	color: #918f8f;
+
+}
+
+/* TEXT style*/
+
+/* used in the description box of the three images on the home page*/
+h1.box-title{
+	padding: 0px;
+margin-top: 0px;
+margin-bottom: 5px;
+color: #23408f;
+font-size: 1em;
+font-weight: normal;
+display: block;
+}
+
+h1.box-title a,
+h1.box-title a:visited{
+color:#23408f;
+}
+
+h1.box-title a:hover
+{
+color:#dc3682;
+}
+
+/* global text */
+.text{
+	font-size: 0.7em;
+	color: #939598;
+}
+
+.text a,
+.text a:visited,
+.text-more-vspace a,
+.text-more-vspace a:visited {
+color: #DD3582 !important;
+}
+
+.mceContentBody a {
+color: #DD3582 !important;
+}
+
+.text a:hover,
+.text-more-vspace a:hover {
+color: #DD3582;
+text-decoration:underline;
+}
+
+#footer-home .text a,
+ #footer-home .text a:visited,
+#footer-home .text-more-vspace a,
+#footer-home .text-more-vspace a:visited{
+color:pink;
+}
+
+#footer-home .text a:hover,
+#footer-home .text-more-vspace a:hover{
+color: #DD3582;
+text-decoration:underline;
+}
+
+
+/* used to space lines - use as a second class */
+.text-more-vspace {
+	line-height: 1.5em;
+}
+
+/* "read more..." style - home page (and other pages?)*/
+.more{
+	color: #23408f;
+	font-size: 1em;
+	margin-top: 3px;
+	display: block;
+}
+
+.more a,
+.more a:visited{
+color: #23408f;
+}
+
+.more a:hover{
+color:#DD3582;
+text-decoration:none;
+}
+
+/* class text inside the footer - home page*/
+.info-footer-element-home .text {
+	font-size: 0.7em;
+	float: right;
+	margin-left: 30px;
+	line-height: 38px;
+	color: pink;
+}
+
+.info-footer-element-page .text
+{
+	font-size: 0.7em;
+	color: pink;
+}
+.info-footer-element-page .text a{
+color:pink;
+}
+
+
+
+.info-footer-element-page {
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.menu-item-container a:hover,a:active {
+	color:#dc3481;
+}
+
+/* Images styles */
+
+/* property for the img tag inside the three "squares" - home page*/
+.square-home img {
+	border: 1px solid #918f8f;
+	width: 182px;
+	height: 164px;
+}
+
+/* hack for vertical align images - used in the footer (home page)*/
+*>.img-container {
+	font-size: 0px;
+}
+
+/* used only to position images inside the footer - home page*/
+#footer-home  .img-container  img {
+	border: 0px;
+	vertical-align: middle;
+	
+}
+
+.second{
+margin-left:35px;
+}
+
+#footer-home  .img-container  {
+	border: 0px;
+	vertical-align: middle;
+
+}
+
+
+/* image container for the footer element on the left (inside pages)*/
+.footer-left .img-container{
+	position: absolute;
+	bottom: 0px;
+        margin-right:35px;
+	
+}
+
+.footer-left .img-container img {
+	margin-top: 10px;
+}
+
+/* shop properties*/
+
+/*products*/
+
+/* big product image container */
+.product-image-container{
+	float: left;
+	width:350px;
+}
+/* big product image - fixed width - unknown height */
+.product-image-container img{
+width: 350px;	
+}
+
+/* container of other images of the product */
+.product-other-images{
+	float: left;
+	width: 350px;
+	margin-top: 8px;
+}
+
+/* images in the product-other-images container */
+.product-other-images img {
+	float: left;
+	margin-right: 3px;
+	height: 55px;
+	width: 67px;
+}
+
+/* container of similar products*/
+.similar-products-container{
+	float: left;
+	width: 350px;
+	margin-top: 25px;
+}
+
+/* overriding the property of .product-listitem-container */
+.similar-products-container .product-listitem-container {
+	height: 72px;
+	width: 67px;
+	float: left;
+	margin: 1px;
+}
+
+/* overriding the property of .product-listthumb and img */
+.similar-products-container .product-listthumb,
+.similar-products-container .product-listthumb img {
+	height: 55px;
+	width: 67px;
+}
+
+/* overriding the property of .product-caption */
+.similar-products-container .product-caption {
+	height: 17px;
+	width: 67px;
+	float: left;
+	line-height: 17px;
+}
+
+
+.similar-products-container .box-title{
+	padding: 0px;
+margin-top: 0px;
+margin-bottom: 5px;
+font-size: 0.8em;
+	color: #939598;
+
+font-weight: normal;
+display: block;
+} 
+
+
+
+/* list of products - photos + caption container*/
+.product-listitem-container{
+	height: 114px;
+	width: 114px;
+	float: left;
+	margin: 1px;
+}
+
+/* thumb container */
+.product-listthumb{
+	width: 114px;
+	height: 92px;
+}
+
+/* caption container */
+.product-caption{
+	height: 22px;
+	float: left;
+	line-height: 22px;
+}
+
+
+.product-bigger-thumb-container{
+	position: absolute;
+	width: 226px;
+	height: 210px;
+	border: 1px solid black;
+	z-index: 2;
+	background-color:transparent;
+}
+
+/* menu template override */
+.menuactive,
+#top-menu-container .menuactive,
+.left-menu-container ul li.menuactive a,
+.left-menu-container ul li.menuactive a:visited
+{
+ color: #dc3682;	
+}
+
+/* menu styles override*/
+.currentpage,
+.currentpage h3{
+	color: #dc3481;
+	width: 100%;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* menu style override*/
+.left-menu-container ul li{
+	width: 100%;
+margin-top:0px;
+margin-right:0px;
+margin-left:0px;
+	margin-bottom:10px;
+	color: #918f8f;
+	font-size: 12px;
+	
+	padding: 0px;
+	float: left;
+	
+}
+
+/* menu style override*/
+.left-menu-container ul li a:hover{
+	color: #dc3481;
+	
+}
+
+input.cms_submit{
+
+font-family:Helvetica, Arial, sans-serif;
+	background-color: #949599;
+	border: none;
+	height: 30px;
+	line-height: 30px;
+	color: #ffffff;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 4px;
+	padding-left: 4px;
+	margin-bottom:10px;
+	cursor: pointer;
+	font-size: 13px;
+
+}
+.stays-blue input{
+background-color: #23408f;
+}
+
+.cms_form{
+color:#000000;
+margin-top:10px;
+	font-size: 13px;
+margin-left:10px;
+}
+
+.error_message{
+margin-top:10px;
+}
+
+.label-login{
+	display:inline-block;
+width: 140px;
+padding-right: 10px;
+}
+
+.info-footer-element-page .text a:hover{
+		color:#dc3682;
+}
+
+.blocks-container{
+	border: 1px solid #dee0e7;
+	margin-bottom: 40px;
+}
+
+.no-border{
+border:0px;
+
+}
+
+.copyright_claim{
+text-align:right;
+padding: 30px 0px 0px 0px;
+bottom: 55px;
+left: 250px;
+position: absolute;
+width: 600px;
+}
+
+.copyright_claim_home{
+text-align:left;
+padding: 50px 0px 0px 0px;
+}
+
+.copyright_claim_home .text,
+.copyright_claim .text {
+	color: #e0e0e0;
+}
